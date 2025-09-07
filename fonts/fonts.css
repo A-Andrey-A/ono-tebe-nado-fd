@@ -15,3 +15,15 @@
   font-weight: bold;
   font-display: swap;
 }
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+
+a:hover  {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}

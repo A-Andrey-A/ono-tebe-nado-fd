@@ -4,7 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header"> 
+      <!-- добавить ссылки на пункты меню -->
+      <nav class="menu">
+        <li> главная </li> 
+        <li> посмотреть лоты </li>
+        <li> об аукционе </li>
+      </nav>
+      <a href="#"><!-- Логотип тут -->
+        <img class="logo-black" src="./images/logo-black.svg"/>
+      </a>
+      <address class="contacts"> <!-- Контакты тут -->
+        <a href="tel:+99995555555" >+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a>наб. Принсенграхт 263-265, Амстердам</a>
+      </address>
+    </header>
+    <main>
+      <div class="cover">
+        <img src="images/cover.jpg" alt=" задний фон с изображением " class="overlay">
+        <!-- Оно 
+              тебе
+                  надо -->
+         <h1>ОНО</h1>
+         <h1>ТЕБЕ</h1>
+         <h1>НАДО</h1>
+         <div class="description"><!-- аукцион вещей в которые никто не верил -->
+           <p>аукцион вещей в которые никто не верил</p>
+           <button>сделать ставку</button>
+         </div>
+      </div>
+      <div class="lots"><!-- Лоты (селектор объявлен)-->
+        <h3>ЛОТЫ не забыть убрать белый цвет
+        </h3>
+        <ul><!--список карточек лотов-->
+          <li><!--карточка 1 -->
+            <a href="#">
+              фильм режисера....
+              <article>
+                <!--текст карточки 1-->
+              </article>
+            </a>
+          </li>
+          <li><!--карточка 2 -->
+            <a href="#">
+              книга....
+              <article>
+                <!--текст карточки 2-->
+              </article>
+            </a>
+          </li>
+          <li><!--карточка 3 -->
+            <a href="#">
+              картина....
+              <article>
+                <!--текст карточки 3-->
+              </article>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="about">
+        <!-- Об аукционе (селектор объявленd)-->
+         <div class="logo-column">
+          <!--логотип (тег объявлен)-->
+         </div>
+         <div class="about-column">
+          <!--об аукционе (селектор объявлен)-->
+         </div>
+      </div>
+    </main>
+    <footer><!-- Контакты -->
+      <div><!--контакты блок-->
+      </div>
+      <div class="menu"><!--меню блок (уточнить один селектор, main сработает ли для двух?)-->
+      </div>
+      <div class="socials"><!--сети блок-->
+      </div>
+    </footer>
+  </body>
 </html>
