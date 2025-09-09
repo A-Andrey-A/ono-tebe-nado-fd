@@ -49,14 +49,16 @@
 }
 
 .cover {
-    display: grid;
-    z-index: 0;
+    /* display: grid; */
 }
 
-.overlay {
+.background-flower {
     /* overlay */
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
+    background: rgba(0, 0, 0, 1);
+    position:absolute;
+    z-index: -1;
 }
 
 .contacts {
@@ -90,13 +92,26 @@
 
 }
 
-h1 {
-    /* ОНО тебе надо размеры шрифта*/
-    z-index: 1;
+.ono {
+    /* ОНО */
     width: 286px;
     height: 115px;
+    position: relative;
 }
 
+.tebe {
+    /* ТЕБЕ */
+    width: 339px;
+    height: 115px;
+    position: relative;
+}
+
+.nado {
+    /* НАДО */
+    width: 387px;
+    height: 115px;
+    position: relative;
+}
 h3 {
     color: white;
 }
