@@ -21,6 +21,7 @@
   display: flex;
   align-items:end;
   justify-self: center;
+  text-align: center;
   gap: 25px;
   list-style: circle;
   width: 391.48;
@@ -48,17 +49,200 @@
     text-align: left;
 }
 
-.cover {
-    /* display: grid; */
+.overlay {
+    /* overlay */
+    width: 1100px;
+    height: 757px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
 }
 
 .background-flower {
     /* overlay */
     width: 1100px;
-    min-height: 757px;
-    background: rgba(0, 0, 0, 1);
-    position:absolute;
+    height: 757px;
+    position:relative;
     z-index: -1;
+}
+
+.title {
+    /* title */
+    position: relative;
+    width: 1000px;
+    height: 385px;
+    margin-top: 165px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ono {
+    /* ОНО */
+    position: absolute;
+    width: 286px;
+    height: 115px;
+    top: 0px;
+    left: 0px;
+}
+
+.tebe {
+    /* ТЕБЕ */
+    position: absolute;
+    width: 339px;
+    height: 115px;
+    top: 135px;
+    left: 330.5px;
+}
+
+.nado {
+    /* НАДО */
+    position: absolute;
+    width: 387px;
+    height: 115px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.descripton {
+    /* description */
+    width: 1000px;
+    height: 51px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.subline {
+/* subline */
+    position: absolute;
+    width: 637px;
+    height: 28px;
+    word-spacing: 18px;
+    left: 50px;
+    bottom: 39px;
+}
+
+.button-stavka {
+    /* button */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 51px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+    right: 50px;
+    bottom: 48px;
+}
+
+.text-button-stavka {
+    /* Сделать ставку */
+    width: 193px;
+    height: 28px;
+}
+
+.lots {
+    /* lots */
+    width: 1052px;
+    height: 723px;
+    margin-top: 197px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.title-lots {
+    /* title */
+    width: 121px;
+    height: 47px;
+    margin-left: 40px;
+}
+
+.cards {
+    /* lots */
+    display: flex;
+    width: 1052px;
+    height: 723px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3 {
+    /* overlay */
+    display: flex;
+    width: 334px;
+    height: 596px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.card1-image, .card2-image, .card3-image {
+    width: 334px;
+    height: 596px;
+    z-index: -1;
+}
+
+.title-card1 {
+    /* Фильм режиссёра, который бросил киношколу */
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 48px;
+    width: 254px;
+    height: 82px;
+}
+
+.title-card2 {
+    /* Книга, где описан один скучный день из жизни рекламного агента */
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 48px;
+    width: 254px;
+    height: 110px;
+}
+
+.title-card3 {
+    /* Картина, которую повторит даже 5-летний сын маминой подруги */
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 48px;
+    width: 254px;
+    height: 110px;
+}
+
+.article-card1 {
+    position: absolute;
+    height: 100%;
+    width: 254px;
+    height: 144px;
+    margin-left: 40px;
+    margin-top: 404px;
+
+}
+
+.article-card2 {
+    position: absolute;
+    height: 100%;
+    margin-left: 40px;
+    margin-top: 188px;
+    width: 254px;
+    height: 360px;
+}
+
+.article-card3 {
+    position: absolute;
+    height: 100%;
+    margin-left: 40px;
+    margin-top: 284px;
+    width: 254px;
+    height: 264px;
+}
+
+.look-more-link {
+    /* more */
+    width: 192px;
+    height: 25px;
+    margin-left: 40px;
+    bottom: 22px;
 }
 
 .contacts {
@@ -71,47 +255,149 @@
     justify-self: end;
 }
 
-.lots {
-    /* посмотреть лоты */
-    width: 169.48px;
-    height: 22px;
-}
-
 .about {
     /* об аукционе */
-    width: 129.48px;
-    height: 22px;
-    
+    display: flex;
+    width: 1052px;
+    height: 595px;
+    margin-top: 120px;
     }
 
-.about-column {
+.logo-black-circle {
+    /* Ellipse 10 */
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 1);
+    margin-top: 35px;
+    margin-left: 47px;
+    justify-items: center;
+    align-content: center;
+}
 
+.white-logo {
+    /* logo-white */
+    width: 148px;
+    height: 114px;
+    display: flex;
+}
+
+.about-column {
+    /* about-column */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 693px;
+    height: 449px;
+    margin-left: 359px;
+    margin-top: 133px;
+}
+
+.about-title {
+    /* Об аукционе */
+    width: 291px;
+    height: 47px; 
+    margin-top: 3px;
+}
+
+.article-about1 {    
+    position: absolute;
+    width: 688px;
+    height: 120px;
+    margin-top: 150px;
+}
+
+.article-about2 {
+    position: absolute;
+    width: 693px;
+    height: 168px;
+    margin-top: 294px;
+}
+
+h3 {
+    color: white;
+}
+
+.footer {
+    /* footer */
+    width: 1100px;
+    height: 180px;
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: start;
+    justify-items: start;
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.contacts-footer {
+    /* contacts */
+    display: flex;
+    flex-direction: column;
+    width: 264.57px;
+    height: 98px;
+    justify-self: start;
+}
+
+.menu-footer {
+      /* menu */
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-self: center;
+    width: 164px;
+    height: 64px;
+    list-style: none;
+}
+
+.footer-main {
+    margin-left: 38px;
+}
+
+.footer-about {
+    margin-left: 20px;
 }
 
 .socials {
+    /* socials */
+    display: flex;
+    justify-self: end;
+    width: 240px;
+    height: 48px;
+    /* Автолейаут */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48;
+}
+
+.vk {
+    /* VK */
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    list-style: none;
 
 }
 
-.ono {
-    /* ОНО */
-    width: 286px;
-    height: 115px;
-    position: relative;
+.youtube {
+    /* YouTube */
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    list-style: none;
 }
 
-.tebe {
-    /* ТЕБЕ */
-    width: 339px;
-    height: 115px;
-    position: relative;
-}
-
-.nado {
-    /* НАДО */
-    width: 387px;
-    height: 115px;
-    position: relative;
-}
-h3 {
-    color: white;
+.pinterest {
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    list-style: none;
 }

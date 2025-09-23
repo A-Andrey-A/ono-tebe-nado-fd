@@ -16,10 +16,13 @@
   font-display: swap;
 }
 
-a, a:link, a:visited  {
-    text-decoration: none;
+a, a:link, {
     color: black;
     font-style: normal;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 a:hover  {
@@ -28,13 +31,98 @@ a:hover  {
     font-style: normal;
 }
 
-h1 {
-  color: rgba(255, 255, 255, 1);
+.title {
+  color: white;
   font-family: Raleway;
   font-size: 100px;
   font-weight: 700;
   line-height: 117px;
   letter-spacing: 30%;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.subline {
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+}
+
+.button-stavka {
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.title-lots {
+  color: rgba(0, 0, 0, 1);
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.title-card1, .title-card2, .title-card3 {
+  color: rgba(255, 255, 255, 1);  
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.article-card1, .article-card2, .article-card3 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.look-more-link {
+  color: rgba(0, 0, 0, 1);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.about-title {
+  color: rgba(0, 0, 0, 1);
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.article-about1, .article-about2 {
+  color: rgba(0, 0, 0, 1);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }

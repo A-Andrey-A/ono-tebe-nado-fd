@@ -9,92 +9,153 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header class="header"> 
-      <!-- добавить ссылки на пункты меню -->
+    <header class="header">
       <nav class="menu">
         <li>
-          <a href="#"> главная </a>
+          <a href="#">главная</a>
         </li> 
         <li>
-          <a href="#">посмотреть лоты</a>
+          <a href="#lots">посмотреть лоты</a>
         </li>
         <li>
-          <a href="#">об аукционе</a>
+          <a href="#about">об аукционе</a>
         </li>
       </nav>
-      <a href="#"><!-- Логотип тут -->
+      <a href="#"><!-- Логотип header  -->
         <img class="logo-black" src="./images/logo-black.svg"/>
       </a>
-      <address class="contacts"> <!-- Контакты тут -->
+      <address class="contacts"> <!-- Контакты header -->
         <a href="tel:+99995555555" >+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <a>наб. Принсенграхт 263-265, Амстердам</a>
       </address>
     </header>
     <main>
-      <div class="cover">
-        <img src="images/cover.jpg" alt=" задний фон с изображением цветка" 
-        class="background-flower">
-        <!-- Оно 
-              тебе
-                  надо -->
-        <h1>
-          <span class="ono">оно</span>
-          <span class="tebe">тебе</span>
-          <span class="nado">надо</span>
-        </h1>
-        <div class="description"><!-- аукцион вещей в которые никто не верил -->
-           <p>аукцион вещей в которые никто не верил</p>
-           <button>сделать ставку</button>
-         </div>
+      <div class="overlay">
+          <h1 class="title">
+            <span class="ono">оно</span>
+            <span class="tebe">тебе</span>
+            <span class="nado">надо</span>
+          </h1>
+          <div class="description"><!-- аукцион вещей в которые никто не верил -->
+            <p class="subline">аукцион вещей, в которые никто не верил</p>
+            <button class="button-stavka">
+              <p class="text-button-stavka">сделать ставку</p>
+            </button>
+          </div>
       </div>
-      <div class="lots"><!-- Лоты (селектор объявлен)-->
-        <h3>ЛОТЫ не забыть убрать белый цвет
-        </h3>
-        <ul><!--список карточек лотов-->
-          <li><!--карточка 1 -->
-            <a href="#">
-              фильм режисера....
-              <article>
-                <!--текст карточки 1-->
-              </article>
-            </a>
+      <img src="images/cover.jpg" alt="задний фон с изображением цветка" 
+        class="background-flower">
+      <div class="lots" id="lots">
+        <h3 class="title-lots">ЛОТЫ</h3>
+        <ul class="cards"><!--список карточек лотов-->
+          <li class="card1"><!--карточка 1 -->
+            <img src="images/card-lot-01.jpg" alt="девушка держит зеркало а 
+          парень смотрит в него и пичесывается" class="card1-image">
+            <span class="title-card1">
+              Фильм режиссёра, который бросил киношколу
+            </span>
+            <article class="article-card1">
+              <!--текст карточки 1-->
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, 
+              если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+            </article>
           </li>
-          <li><!--карточка 2 -->
-            <a href="#">
-              книга....
-              <article>
-                <!--текст карточки 2-->
-              </article>
-            </a>
+          <li class="card2"><!--карточка 2 -->
+            <img src="images/card-lot-02.jpg" class="card2-image">
+            <span class="title-card2">
+              Книга, где описан один скучный день из жизни рекламного агента
+            </span>
+            <article class="article-card2">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                 и с переходами на древнеанглийский. В ней одновременно рассказывается
+                  о 16 июня 1904 года и об истории литературы, начиная с античных 
+                  времён. И это всё накладывается на эпическую поэму Гомера. 
+                  Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </article>
           </li>
-          <li><!--карточка 3 -->
-            <a href="#">
-              картина....
-              <article>
-                <!--текст карточки 3-->
-              </article>
-            </a>
+          <li class="card3"><!--карточка 3 -->
+            <img src="images/card-lot-03.jpg" class="card3-image">
+            <span class="title-card3">
+              Картина, которую повторит даже 5-летний сын маминой подруги
+            </span>
+            <article class="article-card3">
+             Ну действительно, там линия, тут кружочек, а здесь и вовсе 
+             что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна
+               из революционных работ Кандинского?
+            </article>
           </li>
+          <div class="look-more-link">
+            <a href="#">посмотреть больше</a>
+          </div>
         </ul>
       </div>
       <div class="about">
-        <!-- Об аукционе (селектор объявленd)-->
+        <!-- Об аукционе -->
          <div class="logo-column">
-          <!--логотип (тег объявлен)-->
+          <!--логотип -->
          </div>
-         <div class="about-column">
-          <!--об аукционе (селектор объявлен)-->
+        <div class="logo-black-circle">
+            <img class="white-logo" src="images/logo-white.svg">
+        </div>
+        <div class="about-column">
+          <span class="about-title" id="about">
+            об аукционе
+          </span>
+          <article class="article-about1">
+            Здесь вы не встретите очередное пафосное собрание невероятно 
+            дорогого антиквариата. Наши лоты вообще не должны были попасть 
+            ни на один аукцион. Потому что кому нужен дневник девочки-подростка 
+            или картина, которую может нарисовать даже ребёнок? Кому нужны все 
+            эти странные вещи, созданные любителями?
+          </article>
+          <article class="article-about2">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время.
+             В пух и прах растерзанные критиками. Непринятые и непонятые.
+              Когда-то они казались просто неудачными. Но, несмотря на критику, 
+              кажущуюся простоту или сложность, сейчас без этих лотов невозможно
+              представить современную культуру. Когда в эти вещи не верил никто, 
+              продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </article>
+        </div>
          </div>
       </div>
     </main>
-    <footer><!-- Контакты -->
-      <div><!--контакты блок-->
-      </div>
-      <div class="menu"><!--меню блок (уточнить один селектор, main сработает ли для двух?)-->
-      </div>
-      <div class="socials"><!--сети блок-->
-      </div>
+    <footer class="footer"><!-- Контакты -->
+        <address class="contacts-footer"> <!-- Контакты тут -->
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a>наб. Принсенграхт 263-265, Амстердам</a>
+        </address>
+          <nav class="menu-footer"><!--меню блок-->
+            <li>
+              <span class="footer-main">
+                <a href="#">главная </a>
+              </span>
+            </li> 
+            <li>
+              <span>
+                <a href="#lots">посмотреть лоты</a>
+              </span>
+            </li>
+            <li>
+              <span class="footer-about">
+                <a href="#about">об аукционе</a>
+              </span>
+            </li>
+          </nav>
+          <div class="socials"><!--сети блок-->
+            <a href="#http://youtube.com"><!-- youtube -->
+                <img class="youtube" src="images/yt.svg">
+            </a> 
+            <a href="#https://vk.com"><!-- vk -->
+                <img class="vk" src="images/vk.svg">
+            </a>
+            <a href="#"> <!-- pinterest -->
+              <img class="pinterest" src="images/pinterest.svg">
+            </a>
+          </div>
     </footer>
   </body>
 </html>
